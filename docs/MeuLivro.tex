@@ -132,15 +132,15 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{about}{%
-\chapter*{About}\label{about}}
-\addcontentsline{toc}{chapter}{About}
+\hypertarget{sobre}{%
+\chapter*{Sobre}\label{sobre}}
+\addcontentsline{toc}{chapter}{Sobre}
 
 This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
 
-\hypertarget{usage}{%
-\section*{Usage}\label{usage}}
-\addcontentsline{toc}{section}{Usage}
+\hypertarget{uso}{%
+\section*{Uso}\label{uso}}
+\addcontentsline{toc}{section}{Uso}
 
 Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
 
@@ -355,6 +355,7 @@ Por exemplo, após calcular a componente \(g_{22}\) calcular as demais component
 \begin{Shaded}
 \begin{Highlighting}[]
 \ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+
 \CommentTok{\#Funcao que verifica a simetria}
 \KeywordTok{def}\NormalTok{ simetrica(U):}
   \ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\BuiltInTok{len}\NormalTok{(U)):}
@@ -415,19 +416,19 @@ Exemplo matriz \(3 \times 3\)
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+
 \NormalTok{A }\OperatorTok{=}\NormalTok{ np.array([[}\DecValTok{6}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{55}\NormalTok{],}
 \NormalTok{              [}\DecValTok{15}\NormalTok{,}\DecValTok{55}\NormalTok{,}\DecValTok{225}\NormalTok{],}
 \NormalTok{              [}\DecValTok{55}\NormalTok{,}\DecValTok{225}\NormalTok{,}\DecValTok{979}\NormalTok{]])}
 
-\BuiltInTok{print}\NormalTok{(MeuCholesly(A))}
+\NormalTok{MeuCholesly(A)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## [[ 2.4495  0.      0.    ]
-##  [ 6.1237  4.1833  0.    ]
-##  [22.4537 20.9165  6.1101]]
+## array([[ 2.4495,  0.    ,  0.    ],
+##        [ 6.1237,  4.1833,  0.    ],
+##        [22.4537, 20.9165,  6.1101]])
 \end{verbatim}
 
 Exemplo matriz \(4 \times 4\)
