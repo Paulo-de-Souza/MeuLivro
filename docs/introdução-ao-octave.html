@@ -176,7 +176,9 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="1.1" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#comandos-básicos-em-octave"><i class="fa fa-check"></i><b>1.1</b> Comandos Básicos em Octave</a>
 <ul>
-<li class="chapter" data-level="" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#an-unnumbered-section"><i class="fa fa-check"></i>An unnumbered section</a></li>
+<li class="chapter" data-level="1.1.1" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#operações-matemáticas"><i class="fa fa-check"></i><b>1.1.1</b> Operações Matemáticas</a></li>
+<li class="chapter" data-level="1.1.2" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#vetores-e-matrizes"><i class="fa fa-check"></i><b>1.1.2</b> Vetores e Matrizes</a></li>
+<li class="chapter" data-level="1.1.3" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#gráficos"><i class="fa fa-check"></i><b>1.1.3</b> Gráficos</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="cross.html"><a href="cross.html"><i class="fa fa-check"></i><b>2</b> Introdução ao Python</a>
@@ -247,27 +249,52 @@ div.csl-indent {
 <h1><span class="header-section-number">Capítulo 1</span> Introdução ao Octave</h1>
 <div id="comandos-básicos-em-octave" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Comandos Básicos em Octave</h2>
+<div id="operações-matemáticas" class="section level3" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Operações Matemáticas</h3>
+</div>
+<div id="vetores-e-matrizes" class="section level3" number="1.1.2">
+<h3><span class="header-section-number">1.1.2</span> Vetores e Matrizes</h3>
 <p>Esta é uma forma de montar uma matriz <span class="math inline">\(3 \times 3\)</span> em <strong>Octave</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb3-1"><a href="introdução-ao-octave.html#cb3-1" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> [<span class="fl">1</span> <span class="fl">2</span> <span class="fl">3</span><span class="op">;</span><span class="fl">4</span> <span class="fl">5</span> <span class="fl">6</span><span class="op">;</span><span class="fl">7</span> <span class="fl">8</span> <span class="fl">9</span>]</span></code></pre></div>
-<pre><code>## M =
+<div class="sourceCode" id="cb3"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb3-1"><a href="introdução-ao-octave.html#cb3-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> [<span class="fl">1</span> <span class="fl">2</span> <span class="fl">3</span><span class="op">;</span><span class="fl">4</span> <span class="fl">5</span> <span class="fl">6</span><span class="op">;</span><span class="fl">7</span> <span class="fl">8</span> <span class="fl">9</span>]</span></code></pre></div>
+<pre><code>## A =
 ## 
 ##    1   2   3
 ##    4   5   6
 ##    7   8   9</code></pre>
-<div class="sourceCode" id="cb5"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb5-1"><a href="introdução-ao-octave.html#cb5-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="op">-</span><span class="fl">5</span><span class="op">:</span><span class="fl">5</span><span class="op">;</span></span>
-<span id="cb5-2"><a href="introdução-ao-octave.html#cb5-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x<span class="op">.^</span><span class="fl">2</span><span class="op">;</span></span>
-<span id="cb5-3"><a href="introdução-ao-octave.html#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="introdução-ao-octave.html#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x<span class="op">,</span>y<span class="op">,</span><span class="st">&#39;r-&#39;</span>)</span>
-<span id="cb5-5"><a href="introdução-ao-octave.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">grid</span> on</span>
-<span id="cb5-6"><a href="introdução-ao-octave.html#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span> <span class="op">-</span>djpg parabola.jpg</span></code></pre></div>
-<div class="figure">
-<img src="parabola.jpg" alt="" />
-<p class="caption">Parábola definida de -5 à 5</p>
+<p>Existem alguns comandos que automatizam a criação de algumas matrizes; em algumas ocasiões serão necessárias o uso de <strong>matrizes de zeros</strong> ou da <strong>matriz identidade</strong>, os comandos para elaborar ambas são respectivamente:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb5-1"><a href="introdução-ao-octave.html#cb5-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> <span class="fu">zeros</span>(<span class="fl">3</span><span class="op">,</span><span class="fl">3</span>) <span class="co">%matriz de zeros de dimensao 3 por 3</span></span></code></pre></div>
+<pre><code>## A =
+## 
+##    0   0   0
+##    0   0   0
+##    0   0   0</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb7-1"><a href="introdução-ao-octave.html#cb7-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> <span class="fu">eye</span>(<span class="fl">3</span><span class="op">,</span><span class="fl">3</span>) <span class="co">%matriz identidade de dimensao 3 por 3</span></span></code></pre></div>
+<pre><code>## A =
+## 
+## Diagonal Matrix
+## 
+##    1   0   0
+##    0   1   0
+##    0   0   1</code></pre>
 </div>
-<p>All chapter sections start with a second-level (<code>##</code>) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.</p>
-<div id="an-unnumbered-section" class="section level3 unnumbered">
-<h3>An unnumbered section</h3>
-<p>Chapters and sections are numbered by default. To un-number a heading, add a <code>{.unnumbered}</code> or the shorter <code>{-}</code> at the end of the heading, like in this section.</p>
+<div id="gráficos" class="section level3" number="1.1.3">
+<h3><span class="header-section-number">1.1.3</span> Gráficos</h3>
+<p>Para gerar o gráficos bidimensionais, define-se os valores do eixo X e depois aplica-se a equação desejada; por exemplo, para <span class="math inline">\(y = x^2 | \ x \in [-5,5]\)</span> pode ser feito</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb9-1"><a href="introdução-ao-octave.html#cb9-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="op">-</span><span class="fl">5</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">5</span><span class="op">;</span></span>
+<span id="cb9-2"><a href="introdução-ao-octave.html#cb9-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x<span class="op">.^</span><span class="fl">2</span><span class="op">;</span></span>
+<span id="cb9-3"><a href="introdução-ao-octave.html#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="introdução-ao-octave.html#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x<span class="op">,</span>y<span class="op">,</span><span class="st">&#39;r-&#39;</span>)</span>
+<span id="cb9-5"><a href="introdução-ao-octave.html#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">grid</span> on</span>
+<span id="cb9-6"><a href="introdução-ao-octave.html#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span> <span class="op">-</span>djpg parabola.jpg</span></code></pre></div>
+<blockquote>
+<p><strong>OBS:</strong> O comando <code>print -djpg parabola.jpg</code> não é necessário no Octave, os autores o deixaram no corpo do código apenas para salvar a imagem e assim aplica-lá ao livro.</p>
+</blockquote>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-8"></span>
+<img src="parabola.jpg" alt="Parábola definida de -5 à 5" width="50%" />
+<p class="caption">
+Figure 1.1: Parábola definida de -5 à 5
+</p>
+</div>
 
 </div>
 </div>

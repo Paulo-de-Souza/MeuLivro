@@ -193,25 +193,68 @@ As you work, you may start a local server to live preview this HTML book. This p
 \hypertarget{comandos-buxe1sicos-em-octave}{%
 \section{Comandos Básicos em Octave}\label{comandos-buxe1sicos-em-octave}}
 
+\hypertarget{operauxe7uxf5es-matemuxe1ticas}{%
+\subsection{Operações Matemáticas}\label{operauxe7uxf5es-matemuxe1ticas}}
+
+\hypertarget{vetores-e-matrizes}{%
+\subsection{Vetores e Matrizes}\label{vetores-e-matrizes}}
+
 Esta é uma forma de montar uma matriz \(3 \times 3\) em \textbf{Octave}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{M }\OperatorTok{=}\NormalTok{ [}\FloatTok{1} \FloatTok{2} \FloatTok{3}\OperatorTok{;}\FloatTok{4} \FloatTok{5} \FloatTok{6}\OperatorTok{;}\FloatTok{7} \FloatTok{8} \FloatTok{9}\NormalTok{]}
+\NormalTok{A }\OperatorTok{=}\NormalTok{ [}\FloatTok{1} \FloatTok{2} \FloatTok{3}\OperatorTok{;}\FloatTok{4} \FloatTok{5} \FloatTok{6}\OperatorTok{;}\FloatTok{7} \FloatTok{8} \FloatTok{9}\NormalTok{]}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## M =
+## A =
 ## 
 ##    1   2   3
 ##    4   5   6
 ##    7   8   9
 \end{verbatim}
 
+Existem alguns comandos que automatizam a criação de algumas matrizes; em algumas ocasiões serão necessárias o uso de \textbf{matrizes de zeros} ou da \textbf{matriz identidade}, os comandos para elaborar ambas são respectivamente:
+
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{x }\OperatorTok{=} \OperatorTok{{-}}\FloatTok{5}\OperatorTok{:}\FloatTok{5}\OperatorTok{;}
+\NormalTok{A }\OperatorTok{=} \FunctionTok{zeros}\NormalTok{(}\FloatTok{3}\OperatorTok{,}\FloatTok{3}\NormalTok{) }\CommentTok{\%matriz de zeros de dimensao 3 por 3}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## A =
+## 
+##    0   0   0
+##    0   0   0
+##    0   0   0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{A }\OperatorTok{=} \FunctionTok{eye}\NormalTok{(}\FloatTok{3}\OperatorTok{,}\FloatTok{3}\NormalTok{) }\CommentTok{\%matriz identidade de dimensao 3 por 3}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## A =
+## 
+## Diagonal Matrix
+## 
+##    1   0   0
+##    0   1   0
+##    0   0   1
+\end{verbatim}
+
+\hypertarget{gruxe1ficos}{%
+\subsection{Gráficos}\label{gruxe1ficos}}
+
+Para gerar o gráficos bidimensionais, define-se os valores do eixo X e depois aplica-se a equação desejada; por exemplo, para \(y = x^2 | \ x \in [-5,5]\) pode ser feito
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OperatorTok{=} \OperatorTok{{-}}\FloatTok{5}\OperatorTok{:}\FloatTok{0.1}\OperatorTok{:}\FloatTok{5}\OperatorTok{;}
 \NormalTok{y }\OperatorTok{=}\NormalTok{ x}\OperatorTok{.\^{}}\FloatTok{2}\OperatorTok{;}
 
 \FunctionTok{plot}\NormalTok{(x}\OperatorTok{,}\NormalTok{y}\OperatorTok{,}\StringTok{\textquotesingle{}r{-}\textquotesingle{}}\NormalTok{)}
@@ -220,19 +263,18 @@ Esta é uma forma de montar uma matriz \(3 \times 3\) em \textbf{Octave}
 \end{Highlighting}
 \end{Shaded}
 
+\begin{quote}
+\textbf{OBS:} O comando \texttt{print\ -djpg\ parabola.jpg} não é necessário no Octave, os autores o deixaram no corpo do código apenas para salvar a imagem e assim aplica-lá ao livro.
+\end{quote}
+
 \begin{figure}
-\centering
-\includegraphics{parabola.jpg}
-\caption{Parábola definida de -5 à 5}
+
+{\centering \includegraphics[width=0.5\linewidth]{parabola} 
+
+}
+
+\caption{Parábola definida de -5 à 5}\label{fig:unnamed-chunk-8}
 \end{figure}
-
-All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
-
-\hypertarget{an-unnumbered-section}{%
-\subsection*{An unnumbered section}\label{an-unnumbered-section}}
-\addcontentsline{toc}{subsection}{An unnumbered section}
-
-Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
 
 \hypertarget{cross}{%
 \chapter{Introdução ao Python}\label{cross}}

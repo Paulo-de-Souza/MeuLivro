@@ -1,0 +1,8 @@
+output_dir: "docs"
+book_filename: "MeuLivro"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Capítulo "
+  label:
+    thm: 'Teorema '
