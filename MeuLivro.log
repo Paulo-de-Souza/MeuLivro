@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.10)  11 FEB 2022 09:31
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.10)  11 FEB 2022 10:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -803,13 +803,15 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 200.
+File: parabola.jpg Graphic file (type bmp)
+<parabola.jpg>
 [9
 
-] [10
-
-]
+] [10]
 Cap\'{\i }tulo 2.
-[11] [12
+[11
+
+] [12
 
 ] [13] [14]
 Cap\'{\i }tulo 3.
@@ -834,10 +836,10 @@ Package rerunfilecheck Info: File `MeuLivro.out' has not changed.
 (rerunfilecheck)             Checksum: 9FEDC96489CD6F55FED07A7DD93C7F24;3936.
  ) 
 Here is how much of TeX's memory you used:
- 18933 strings out of 478165
- 346486 string characters out of 5852286
+ 18944 strings out of 478165
+ 346635 string characters out of 5852286
  821197 words of memory out of 5000000
- 39285 multiletter control sequences out of 15000+600000
+ 39293 multiletter control sequences out of 15000+600000
  475766 words of font info for 88 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  86i,8n,121p,381b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
