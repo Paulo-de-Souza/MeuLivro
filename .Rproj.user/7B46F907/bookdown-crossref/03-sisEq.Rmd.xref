@@ -1,0 +1,17 @@
+h1:part-resolução-de-sistemas-e-aproximação-de-funções (PART) Resolução de Sistemas e Aproximação de Funções
+h1:sistemas-de-equações Sistemas de Equações
+h2:equações-não-lineares Equações Não-Lineares
+h3:método-de-newton Método de Newton
+h3:método-das-secantes Método das Secantes
+h3:método-de-regula-falsi Método de Regula Falsi
+h3:sistemas-de-equações-não-lineares Sistemas de Equações não lineares
+h3:equações-polinomiais Equações Polinomiais
+h2:solução-de-equações-lineares-métodos-exatos Solução de Equações Lineares: Métodos Exatos
+h3:decomposição-lu Decomposição LU
+h3:eliminação-de-gauss Eliminação de Gauss
+h3:decomposição-de-cholesky Decomposição de Cholesky
+h4:função-de-cholesky-python Função de Cholesky (Python)
+h4:comando-linalg.cholesky Comando linalg.Cholesky
+h2:solução-de-equações-lineares-métodos-iterativos Solução de Equações Lineares: Métodos Iterativos
+h3:método-de-gauss-seidel Método de Gauss Seidel
+
