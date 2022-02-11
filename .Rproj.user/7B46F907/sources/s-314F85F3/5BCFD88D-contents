@@ -1,10 +1,18 @@
 # (PART) Conhecendo o Octave e o Python {-}
 
 # Introdução ao Octave
+O GNU Octave, ou simplesmente Octave, é um *software* livre para execução e desenvolvimento de operações matemáticas. 
 
 ## Comandos Básicos em Octave 
 
-### Operações Matemáticas
+### Operações Matemáticas e Lógicas
+As operações matemáticas simples, adição, subtração, multiplicação e divisão podem ser executadas de maneira direta, como é apresentado na sequência
+```{octave engine.path="C:/Program Files/GNU Octave/Octave-6.3.0/mingw64/bin/octave-cli-6.3.0.exe"}
+2 + 5
+2 - 5
+2 * 5
+2 / 5
+```
 
 ### Vetores e Matrizes
 
@@ -41,7 +49,31 @@ knitr::include_graphics("parabola.jpg")
 ```
 
 
+## Programação em Octave
+### Estruturas de Repetição
+### Funções *function*
+```{octave engine.path="C:/Program Files/GNU Octave/Octave-6.3.0/mingw64/bin/octave-cli-6.3.0.exe"}
+function I = InerciaRet(h,b)
+% Momento de Inercia de uma barra de seção retangular
+% h - altura da seção
+% b - base da seção
 
+I = h^3*b/12
 
+```
+É possível então chamar a função pela *Janela de Comandos* ou de outro *script* 
+```
+altura = 2;
+base = 3;
+I = InericaRet(altura,base)
+```
+```
+## I = 
+##
+##   2
+```  
 
+### Leitura de documentos externos
+### Bibliotecas 
+Existem diversas bibliotecas extras no Octave, aqui serão apresentadas apenas duas que por ventura são utilizadas ao decorrer do livro, para mais detalhes consulte...
 

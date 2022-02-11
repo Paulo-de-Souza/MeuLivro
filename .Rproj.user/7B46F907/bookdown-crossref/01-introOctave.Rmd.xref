@@ -1,7 +1,12 @@
 h1:part-conhecendo-o-octave-e-o-python (PART) Conhecendo o Octave e o Python
 h1:introdução-ao-octave Introdução ao Octave
 h2:comandos-básicos-em-octave Comandos Básicos em Octave
-h3:operações-matemáticas Operações Matemáticas
+h3:operações-matemáticas-e-lógicas Operações Matemáticas e Lógicas
 h3:vetores-e-matrizes Vetores e Matrizes
 h3:gráficos Gráficos
+h2:programação-em-octave Programação em Octave
+h3:estruturas-de-repetição Estruturas de Repetição
+h3:funções-function Funções 
+h3:leitura-de-documentos-externos Leitura de documentos externos
+h3:bibliotecas Bibliotecas
 

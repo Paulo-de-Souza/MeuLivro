@@ -165,20 +165,26 @@ div.csl-indent {
 <li><a href="./">MCAE:Aplicacoes em Octave e Python</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Sobre</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Motivação</a>
 <ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#uso"><i class="fa fa-check"></i>Uso</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#render-book"><i class="fa fa-check"></i>Render book</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#preview-book"><i class="fa fa-check"></i>Preview book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#por-que-ler-este-livro"><i class="fa fa-check"></i>Por que ler este livro?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#sobre-os-autores"><i class="fa fa-check"></i>Sobre os Autores</a></li>
 </ul></li>
 <li class="part"><span><b>I Conhecendo o Octave e o Python</b></span></li>
 <li class="chapter" data-level="1" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html"><i class="fa fa-check"></i><b>1</b> Introdução ao Octave</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#comandos-básicos-em-octave"><i class="fa fa-check"></i><b>1.1</b> Comandos Básicos em Octave</a>
 <ul>
-<li class="chapter" data-level="1.1.1" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#operações-matemáticas"><i class="fa fa-check"></i><b>1.1.1</b> Operações Matemáticas</a></li>
+<li class="chapter" data-level="1.1.1" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#operações-matemáticas-e-lógicas"><i class="fa fa-check"></i><b>1.1.1</b> Operações Matemáticas e Lógicas</a></li>
 <li class="chapter" data-level="1.1.2" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#vetores-e-matrizes"><i class="fa fa-check"></i><b>1.1.2</b> Vetores e Matrizes</a></li>
 <li class="chapter" data-level="1.1.3" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#gráficos"><i class="fa fa-check"></i><b>1.1.3</b> Gráficos</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#programação-em-octave"><i class="fa fa-check"></i><b>1.2</b> Programação em Octave</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#estruturas-de-repetição"><i class="fa fa-check"></i><b>1.2.1</b> Estruturas de Repetição</a></li>
+<li class="chapter" data-level="1.2.2" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#funções-function"><i class="fa fa-check"></i><b>1.2.2</b> Funções <em>function</em></a></li>
+<li class="chapter" data-level="1.2.3" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#leitura-de-documentos-externos"><i class="fa fa-check"></i><b>1.2.3</b> Leitura de documentos externos</a></li>
+<li class="chapter" data-level="1.2.4" data-path="introdução-ao-octave.html"><a href="introdução-ao-octave.html#bibliotecas"><i class="fa fa-check"></i><b>1.2.4</b> Bibliotecas</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="cross.html"><a href="cross.html"><i class="fa fa-check"></i><b>2</b> Introdução ao Python</a>
@@ -247,10 +253,20 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="introdução-ao-octave" class="section level1" number="1">
 <h1><span class="header-section-number">Capítulo 1</span> Introdução ao Octave</h1>
+<p>O GNU Octave, ou simplesmente Octave, é um <em>software</em> livre para execução e desenvolvimento de operações matemáticas.</p>
 <div id="comandos-básicos-em-octave" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Comandos Básicos em Octave</h2>
-<div id="operações-matemáticas" class="section level3" number="1.1.1">
-<h3><span class="header-section-number">1.1.1</span> Operações Matemáticas</h3>
+<div id="operações-matemáticas-e-lógicas" class="section level3" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Operações Matemáticas e Lógicas</h3>
+<p>As operações matemáticas simples, adição, subtração, multiplicação e divisão podem ser executadas de maneira direta, como é apresentado na sequência</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb1-1"><a href="introdução-ao-octave.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fl">2</span> <span class="op">+</span> <span class="fl">5</span></span>
+<span id="cb1-2"><a href="introdução-ao-octave.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2</span> <span class="op">-</span> <span class="fl">5</span></span>
+<span id="cb1-3"><a href="introdução-ao-octave.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fl">2</span> <span class="op">*</span> <span class="fl">5</span></span>
+<span id="cb1-4"><a href="introdução-ao-octave.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fl">2</span> <span class="op">/</span> <span class="fl">5</span></span></code></pre></div>
+<pre><code>## ans = 7
+## ans = -3
+## ans = 10
+## ans = 0.4000</code></pre>
 </div>
 <div id="vetores-e-matrizes" class="section level3" number="1.1.2">
 <h3><span class="header-section-number">1.1.2</span> Vetores e Matrizes</h3>
@@ -289,12 +305,41 @@ div.csl-indent {
 <blockquote>
 <p><strong>OBS:</strong> O comando <code>print -djpg parabola.jpg</code> não é necessário no Octave, os autores o deixaram no corpo do código apenas para salvar a imagem e assim aplica-lá ao livro.</p>
 </blockquote>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-8"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-6"></span>
 <img src="parabola.jpg" alt="Parábola definida de -5 à 5" width="50%" />
 <p class="caption">
 Figure 1.1: Parábola definida de -5 à 5
 </p>
 </div>
+</div>
+</div>
+<div id="programação-em-octave" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Programação em Octave</h2>
+<div id="estruturas-de-repetição" class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Estruturas de Repetição</h3>
+</div>
+<div id="funções-function" class="section level3" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> Funções <em>function</em></h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb10-1"><a href="introdução-ao-octave.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">function</span> <span class="bu">I</span> <span class="op">=</span> InerciaRet(h<span class="op">,</span>b)</span>
+<span id="cb10-2"><a href="introdução-ao-octave.html#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co">% Momento de Inercia de uma barra de seção retangular</span></span>
+<span id="cb10-3"><a href="introdução-ao-octave.html#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">% h - altura da seção</span></span>
+<span id="cb10-4"><a href="introdução-ao-octave.html#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co">% b - base da seção</span></span>
+<span id="cb10-5"><a href="introdução-ao-octave.html#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="introdução-ao-octave.html#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="bu">I</span> <span class="op">=</span> h<span class="op">^</span><span class="fl">3</span><span class="op">*</span>b<span class="op">/</span><span class="fl">12</span></span></code></pre></div>
+<p>É possível então chamar a função pela <em>Janela de Comandos</em> ou de outro <em>script</em></p>
+<pre><code>altura = 2;
+base = 3;
+I = InericaRet(altura,base)</code></pre>
+<pre><code>## I = 
+##
+## 2</code></pre>
+</div>
+<div id="leitura-de-documentos-externos" class="section level3" number="1.2.3">
+<h3><span class="header-section-number">1.2.3</span> Leitura de documentos externos</h3>
+</div>
+<div id="bibliotecas" class="section level3" number="1.2.4">
+<h3><span class="header-section-number">1.2.4</span> Bibliotecas</h3>
+<p>Existem diversas bibliotecas extras no Octave, aqui serão apresentadas apenas duas que por ventura são utilizadas ao decorrer do livro, para mais detalhes consulte…</p>
 
 </div>
 </div>

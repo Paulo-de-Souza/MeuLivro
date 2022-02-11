@@ -1,0 +1,4 @@
+"0","function y = InerciaRet(h,b)
+
+y = h^3*b/12
+"

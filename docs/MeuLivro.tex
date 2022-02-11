@@ -132,57 +132,21 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{sobre}{%
-\chapter*{Sobre}\label{sobre}}
-\addcontentsline{toc}{chapter}{Sobre}
+\hypertarget{motivauxe7uxe3o}{%
+\chapter*{Motivação}\label{motivauxe7uxe3o}}
+\addcontentsline{toc}{chapter}{Motivação}
 
-This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
+Este livro tem como objetivo ser um material auxiliar para os alunos da disciplina de \textbf{Métodos Computacionais para Análise Estrutural} do curso de \textbf{Engenharia Aeroespacial} da \textbf{Universidade Federal do ABC}. No entanto, o mesmo, tenta abordar de forma clara e concisa os temas referentes a \emph{Álgebra Linear, Cálculo Numério} e \emph{Modelagens Estruturais} para todos aqueles que são intusiastas nesses tópicos.
 
-\hypertarget{uso}{%
-\section*{Uso}\label{uso}}
-\addcontentsline{toc}{section}{Uso}
+\hypertarget{por-que-ler-este-livro}{%
+\section*{Por que ler este livro?}\label{por-que-ler-este-livro}}
+\addcontentsline{toc}{section}{Por que ler este livro?}
 
-Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
+\hypertarget{sobre-os-autores}{%
+\section*{Sobre os Autores}\label{sobre-os-autores}}
+\addcontentsline{toc}{section}{Sobre os Autores}
 
-Use second-level and higher headings within chapters like: \texttt{\#\#\ A\ short\ section} or \texttt{\#\#\#\ An\ even\ shorter\ section}.
-
-The \texttt{index.Rmd} file is required, and is also your first book chapter. It will be the homepage when you render the book.
-
-\hypertarget{render-book}{%
-\section*{Render book}\label{render-book}}
-\addcontentsline{toc}{section}{Render book}
-
-You can render the HTML version of this example book without changing anything:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Find the \textbf{Build} pane in the RStudio IDE, and
-\item
-  Click on \textbf{Build Book}, then select your output format, or select ``All formats'' if you'd like to use multiple formats from the same book source files.
-\end{enumerate}
-
-Or build the book from the R console:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{render\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
-To render this example to PDF as a \texttt{bookdown::pdf\_book}, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
-
-\hypertarget{preview-book}{%
-\section*{Preview book}\label{preview-book}}
-\addcontentsline{toc}{section}{Preview book}
-
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in ``Preview book'', or from the R console:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{serve\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
+\emph{Paulo de Souza} é graduando do curso de Engenharia Aeroespacial. Seus interesses são nas áreas de simulação estrutural de aeronaves e aprendizado de máquina com aplicação em frentes da engenharia mecânica.
 
 \hypertarget{part-conhecendo-o-octave-e-o-python}{%
 \part{Conhecendo o Octave e o Python}\label{part-conhecendo-o-octave-e-o-python}}
@@ -190,11 +154,31 @@ As you work, you may start a local server to live preview this HTML book. This p
 \hypertarget{introduuxe7uxe3o-ao-octave}{%
 \chapter{Introdução ao Octave}\label{introduuxe7uxe3o-ao-octave}}
 
+O GNU Octave, ou simplesmente Octave, é um \emph{software} livre para execução e desenvolvimento de operações matemáticas.
+
 \hypertarget{comandos-buxe1sicos-em-octave}{%
 \section{Comandos Básicos em Octave}\label{comandos-buxe1sicos-em-octave}}
 
-\hypertarget{operauxe7uxf5es-matemuxe1ticas}{%
-\subsection{Operações Matemáticas}\label{operauxe7uxf5es-matemuxe1ticas}}
+\hypertarget{operauxe7uxf5es-matemuxe1ticas-e-luxf3gicas}{%
+\subsection{Operações Matemáticas e Lógicas}\label{operauxe7uxf5es-matemuxe1ticas-e-luxf3gicas}}
+
+As operações matemáticas simples, adição, subtração, multiplicação e divisão podem ser executadas de maneira direta, como é apresentado na sequência
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FloatTok{2} \OperatorTok{+} \FloatTok{5}
+\FloatTok{2} \OperatorTok{{-}} \FloatTok{5}
+\FloatTok{2} \OperatorTok{*} \FloatTok{5}
+\FloatTok{2} \OperatorTok{/} \FloatTok{5}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## ans = 7
+## ans = -3
+## ans = 10
+## ans = 0.4000
+\end{verbatim}
 
 \hypertarget{vetores-e-matrizes}{%
 \subsection{Vetores e Matrizes}\label{vetores-e-matrizes}}
@@ -273,8 +257,50 @@ Para gerar o gráficos bidimensionais, define-se os valores do eixo X e depois a
 
 }
 
-\caption{Parábola definida de -5 à 5}\label{fig:unnamed-chunk-8}
+\caption{Parábola definida de -5 à 5}\label{fig:unnamed-chunk-6}
 \end{figure}
+
+\hypertarget{programauxe7uxe3o-em-octave}{%
+\section{Programação em Octave}\label{programauxe7uxe3o-em-octave}}
+
+\hypertarget{estruturas-de-repetiuxe7uxe3o}{%
+\subsection{Estruturas de Repetição}\label{estruturas-de-repetiuxe7uxe3o}}
+
+\hypertarget{funuxe7uxf5es-function}{%
+\subsection{\texorpdfstring{Funções \emph{function}}{Funções function}}\label{funuxe7uxf5es-function}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ControlFlowTok{function} \BuiltInTok{I} \OperatorTok{=}\NormalTok{ InerciaRet(h}\OperatorTok{,}\NormalTok{b)}
+\CommentTok{\% Momento de Inercia de uma barra de seção retangular}
+\CommentTok{\% h {-} altura da seção}
+\CommentTok{\% b {-} base da seção}
+
+\BuiltInTok{I} \OperatorTok{=}\NormalTok{ h}\OperatorTok{\^{}}\FloatTok{3}\OperatorTok{*}\NormalTok{b}\OperatorTok{/}\FloatTok{12}
+\end{Highlighting}
+\end{Shaded}
+
+É possível então chamar a função pela \emph{Janela de Comandos} ou de outro \emph{script}
+
+\begin{verbatim}
+altura = 2;
+base = 3;
+I = InericaRet(altura,base)
+\end{verbatim}
+
+\begin{verbatim}
+## I = 
+##
+## 2
+\end{verbatim}
+
+\hypertarget{leitura-de-documentos-externos}{%
+\subsection{Leitura de documentos externos}\label{leitura-de-documentos-externos}}
+
+\hypertarget{bibliotecas}{%
+\subsection{Bibliotecas}\label{bibliotecas}}
+
+Existem diversas bibliotecas extras no Octave, aqui serão apresentadas apenas duas que por ventura são utilizadas ao decorrer do livro, para mais detalhes consulte\ldots{}
 
 \hypertarget{cross}{%
 \chapter{Introdução ao Python}\label{cross}}
