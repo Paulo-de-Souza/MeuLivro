@@ -1,5 +1,5 @@
 --- 
-title: "Métodos Computacionais para Análise Estrutural: Aplicações em Octave e Python"
+title: "Métodos Computacionais para Análise Estrutural: Aplicações em Python e Octave"
 author: "Paulo de Souza Silva"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -16,6 +16,9 @@ github-repo: rstudio/bookdown-demo
 ---
 
 # Motivação {-}
+<center>
+  <img src="Capa-Livro.png" width=50%>
+</center>
 
 Este livro tem como objetivo ser um material auxiliar para os alunos da disciplina de **Métodos Computacionais para Análise Estrutural** do curso de **Engenharia Aeroespacial** da **Universidade Federal do ABC**. No entanto, o mesmo, tenta abordar de forma clara e concisa os temas referentes a *Álgebra Linear, Cálculo Numério* e *Modelagens Estruturais* para todos aqueles que são intusiastas nesses tópicos.
 
