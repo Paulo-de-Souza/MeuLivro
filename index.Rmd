@@ -16,7 +16,8 @@ github-repo: rstudio/bookdown-demo
 ---
 
 # Motivação {-}
-<center>
+
+<center> 
   <img src="Capa-Livro.png" width=50%>
 </center>
 
